@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>테이블 변경 화면</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        input {
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: none;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+
+        .table-number {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        button:hover {
+            background-color: #3e8e41;
+        }
+
+        .back-button {
+            background-color: #f44336;
+        }
+
+        .back-button:hover {
+            background-color: #d32f2f;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>테이블 변경</h1>
+        <form>
+            <p class="table-number">현재 테이블 번호: 1</p>
+            <label for="customer-name">예약자명</label>
+            <input type="text" id="customer-name">
+            <label for="new-table-number">옮길 테이블 번호</label>
+            <input type="number" id="new-table-number">
+            <div class="button-container">
+                <button class="back-button">뒤로가기</button>
+                <button id="confirm-button">완료</button>
+            </div>
+        </form>
+
+    </div>
+</body>
+
+</html>
